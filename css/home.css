@@ -36,6 +36,11 @@ header::after{
     padding: 10px 0;
 }
 
+.korg{
+    
+    flex-direction: right;
+}
+
 nav{
     float: right;
 }

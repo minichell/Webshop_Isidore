@@ -7,6 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script>
+        $(document).ready(function(){
+         $('#icon').click(function(){
+             $('ul').toggleClass('show');
+         });
+        });
+    </script>
    
     <title>HOME</title>
 </head>
@@ -28,6 +37,10 @@
         <li><a href="home.html"><img src="korg.png" alt="korg" class="korg" height="40px" width="40px"> </a></li>
 
     </ul>
+
+    <label id="icon">
+        <i class="fas fa-bars"></i>
+    </label>
     </nav>
 </div>
 </header>

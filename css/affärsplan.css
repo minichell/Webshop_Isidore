@@ -1,0 +1,682 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background: #222;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background:white;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+
+}
+
+.logo{
+    float: left;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+nav{
+    float: right;
+}
+
+nav ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 55px;
+
+    position: relative;
+}
+
+nav a {
+color: black;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 14px;
+}
+
+nav a:hover{
+    color: black;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: rgb(209, 151, 202);
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 350ms;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+nav #icon{
+    color: black;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width: 1048px){
+    label.logo{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+
+    nav ul{
+        margin-right: 20px;
+    }
+
+    nav a{
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width: 1650px){
+    nav #icon{
+        display: block;
+      
+    }
+
+    nav ul{
+        z-index: 2;
+        position: absolute;
+        width: 100%;
+        height: 109vh;
+        background: white;
+        top: 150px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav li{
+        float: absolute;
+        text-align: center;
+        display: block;
+        margin: 10px 0;
+        line-height: 5px;
+    }
+    nav a{
+        font-size: 15px;
+    }
+    nav ul.show{
+        left: 0;
+    }
+}
+
+.footer{
+    background-color:black;
+    opacity: 50%;
+    padding: 70px 0;
+    bottom: 0;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container2{
+    max-width: 1170px;
+    margin: auto;
+ 
+}
+
+ul{
+    list-style: none;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: rgb(209, 151, 202);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease ;
+}
+
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5 ease;
+}
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    position: relative;
+    top:40em;
+    width: 100%;
+}
+
+/*responsive*/
+@media(max-width: 574px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .container{
+    width: 50%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+}
+
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+.titel{
+    position: absolute;
+    top: 40%;
+    font-size: 80px;
+    left: 5%;
+}
+
+.box{
+    position: absolute;
+    background-color: black;
+    width: 800px;
+    height: 1300px;
+    left: 50%;
+    opacity: 50%;
+    top: 50%;
+    box-shadow: 5px 10px 20px black;
+}
+
+.text1{
+    position: absolute;
+    color: white;
+    width: 600px ;
+    height: 800px;
+    font-size: 30px;
+    left: 55%;
+    top: 40em;
+
+}
+
+.text2{
+    position: absolute;
+    color: white;
+    width: 800px ;
+    height: 800px;
+    top: 43em;
+    left: 5%;
+    font-size: 25px;
+}
+
+.titel2{
+    position: absolute;
+    top: 25em;
+    font-size: 80px;
+    left: 7em;
+}
+
+.line{
+    position: absolute;
+    width: 500px;
+    height: 10px;
+    background-color: black;
+    top: 128em;
+}
+
+.cir1{
+position: relative;
+background-color: black;
+opacity: 50%;
+width: 800px;
+height: 800px;
+border-radius: 1000px;
+left: 10%;
+top: 80em;
+}
+
+.cir2{
+    position: relative;
+    background-color: black;
+    opacity: 50%;
+    width: 800px;
+    height: 800px;
+    border-radius: 1000px;
+    left: 45%;
+    top: 30em; 
+}
+
+.titel3{
+    position: absolute;
+    color: white;
+    font-size: 60px;
+    left: 20%;
+    top: 39em;
+}
+
+.info1{
+    position: absolute;
+    color: white;
+    width: 400px;
+    font-size: 20px;
+    left: 20%;
+    top: 125em;
+}
+
+.info2{
+    position: absolute;
+    color: white;
+    width: 400px;
+    font-size: 20px;
+    left: 57%;
+    top: 125em;
+}
+
+@media(max-width: 1650px){
+    .grey{
+        width: 100%;
+        margin-bottom: 30px;
+        height: 500px;
+       
+    }
+
+    .titel{
+        width: 70%;
+        margin-bottom: 30px;
+        font-size: 60px;
+        top: 45%;
+        left: 15%;
+    }
+
+    .box{
+        width: 45%;
+        margin-bottom: 30px;
+        height: 600px;
+        width: 800px;
+        left: 20%;
+    }
+
+    .text1{
+        width: 50%;
+        margin-bottom: 30px;
+        font-size: 20px;
+        left: 25%;
+        width: 40%;
+    }
+
+    .text2{
+        width: 50%;
+        margin-bottom: 30px;
+        margin-top: 20%;
+        width: 80%;
+        font-size: 20px;
+        left: 10%;
+    }
+
+    .line{
+        width: 10%;
+        margin-bottom: 30px;
+        width: 400px;
+        height: 5px;
+        top: 95em;
+    }
+
+    .titel2{
+        width: 70%;
+        margin-bottom: 30px;
+        font-size: 45px;
+        left: 30%;
+        top: 33em;
+    }
+
+    .cir1{
+        width: 45%;
+        margin-bottom: 30px;
+        top:60em;
+        width: 600px;
+        height: 600px;
+    }
+
+    .cir2{
+        width: 45%;
+        margin-bottom: 30px;
+        width: 600px;
+        height: 600px;
+        left: 30em;
+        top: 40em;
+    }
+
+    .titel3{
+        width: 50%;
+        margin-bottom: 30px;
+        font-size: 50px;
+        top: 33em;
+        left: 19%;
+    }
+     
+    .info1{
+        width: 50%;
+        margin-bottom: 30px;
+        font-size: 15px;
+        width: 300px;
+        top:120em;
+        left: 20%;
+    }
+
+    .info2{
+        width: 50%;
+        margin-bottom: 30px;
+        font-size: 15px;
+        width: 300px;
+        top: 147em;
+        left: 44%;
+    }
+    .footer{
+        top: 60em;
+    } 
+}
+
+@media(max-width: 1048px){
+    .grey{
+        width: 100%;
+        margin-bottom: 30px;
+        height: 400px;
+       
+    }
+
+    .titel{
+        width: 70%;
+        margin-bottom: 30px;
+        font-size: 40px;
+        top: 45%;
+        left: 15%;
+    }
+
+    .box{
+        width: 45%;
+        margin-bottom: 30px;
+        height: 400px;
+        width: 700px;
+        left: 13%;
+    }
+
+    .text1{
+        width: 50%;
+        margin-bottom: 30px;
+        font-size: 16px;
+        left: 20%;
+        width: 60%;
+    }
+
+    .text2{
+        width: 50%;
+        margin-bottom: 30px;
+        margin-top: 40%;
+        width: 80%;
+        font-size: 16px;
+        left: 10%;
+    }
+
+    .line{
+        width: 10%;
+        margin-bottom: 30px;
+        width: 200px;
+        height: 5px;
+        top: 94em;
+    }
+
+    .titel2{
+        width: 70%;
+        margin-bottom: 30px;
+        font-size: 35px;
+        left: 30%;
+        top: 42em;
+    }
+
+    .cir1{
+        width: 45%;
+        margin-bottom: 30px;
+        top:60em;
+        width: 600px;
+        height: 600px;
+    }
+
+    .cir2{
+        width: 45%;
+        margin-bottom: 30px;
+        width: 600px;
+        height: 600px;
+        left: 5em;
+        top: 65em;
+    }
+
+    .titel3{
+        width: 50%;
+        margin-bottom: 30px;
+        font-size: 50px;
+        top: 33em;
+        left: 23%;
+    }
+     
+    .info1{
+        width: 50%;
+        margin-bottom: 30px;
+        font-size: 15px;
+        width: 300px;
+        top:120em;
+        left: 25%;
+    }
+
+    .info2{
+        width: 50%;
+        margin-bottom: 30px;
+        font-size: 15px;
+        width: 300px;
+        top: 165em;
+        left: 25%;
+    }
+    .footer{
+        top: 80em;
+    } 
+}
+  
+ 
+@media(max-width: 574px){
+    .grey{
+        width: 100%;
+        margin-bottom: 30px;
+        height: 400px;
+       
+    }
+
+    .titel{
+        width: 70%;
+        margin-bottom: 30px;
+        font-size: 20px;
+        top: 45%;
+        left: 15%;
+    }
+
+    .box{
+        width: 45%;
+        margin-bottom: 30px;
+        height: 400px;
+        width: 400px;
+        left: 10%;
+    }
+
+    .text1{
+        width: 50%;
+        margin-bottom: 30px;
+        font-size: 15px;
+        left: 15%;
+        width: 60%;
+    }
+
+    .text2{
+        width: 50%;
+        margin-bottom: 30px;
+        margin-top: 60%;
+        width: 80%;
+        font-size: 15px;
+        left: 10%;
+    }
+
+    .line{
+        width: 10%;
+        margin-bottom: 30px;
+        width: 100px;
+        height: 5px;
+        top: 95em;
+    }
+
+    .titel2{
+        width: 70%;
+        margin-bottom: 30px;
+        font-size: 20px;
+        left: 25%;
+        top: 75em;
+    }
+
+    .cir1{
+        width: 45%;
+        margin-bottom: 30px;
+        top:60em;
+        width: 400px;
+        height: 400px;
+    }
+
+    .cir2{
+        width: 45%;
+        margin-bottom: 30px;
+        width: 400px;
+        height: 400px;
+        left: 3em;
+        top: 65em;
+    }
+
+    .titel3{
+        width: 50%;
+        margin-bottom: 30px;
+        font-size: 30px;
+        top: 55em;
+        left: 29%;
+    }
+     
+    .info1{
+        width: 50%;
+        margin-bottom: 30px;
+        font-size: 10px;
+        width: 200px;
+        top:174em;
+        left: 30%;
+    }
+
+    .info2{
+        width: 50%;
+        margin-bottom: 30px;
+        font-size: 10px;
+        width: 200px;
+        top:218em;
+        left: 30%;
+    }
+    .footer{
+        top: 80em;
+    } 
+}
+
+
+
+
+
+
+
+

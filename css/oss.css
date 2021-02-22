@@ -231,6 +231,13 @@ ul{
     width: 100%;
 }
 
+.footer {
+    position: relative;
+    top:160em;
+    width: 100%;
+}
+
+
 /*responsive*/
 @media(max-width: 574px){
     .footer-col{
@@ -250,6 +257,142 @@ ul{
         margin-bottom: 30px;
     }
 }
+
+.isa{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    box-shadow: 5px 5px 20px black;
+}
+
+.dodo{
+    position: absolute;
+    top: 150%;
+    left: 60%;
+    box-shadow: 5px 5px 20px black;
+}
+
+.ram1{
+    position: absolute;
+    width: 700px;
+    height: 100px;
+    background-color: black;
+    opacity: 80%;
+    top: 85%;
+    left: 25%;
+}
+
+.ram2{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    background-color: black;
+    opacity: 80%;
+    top: 22%;
+    left: 17%;
+}
+
+.namn{
+    position: absolute;
+    color: white;
+    top: 86%;
+    left: 31%;
+    text-align: center;
+    font-size: 45px;
+}
+
+.vd{
+    position: absolute;
+    color: white;
+    top: 21%;
+    left: 22%;
+    text-align: center;
+    font-size: 70px;
+}
+
+.info1{
+    position: absolute;
+    color: white;
+    width: 800px;
+    height: 500px;
+    font-size: 20px;
+    top: 55%;
+    left: 47%;
+}
+
+.råd{
+    position: absolute;
+    color: white;
+    top: 100%;
+    left: 50%;
+    text-align: center;
+    font-size: 45px;
+}
+
+.info2{
+    position: absolute;
+    color: white;
+    width: 800px;
+    height: 500px;
+    font-size: 20px;
+    top: 115%;
+    left: 48%;
+}
+
+.ram3{
+    position: absolute;
+    width: 700px;
+    height: 100px;
+    background-color: black;
+    opacity: 80%;
+    top: 153%;
+    left: 25%;
+}
+
+.namn2{
+    position: absolute;
+    color: white;
+    top: 155%;
+    left: 26%;
+    text-align: center;
+    font-size: 45px;
+}
+
+.ram4{
+    position: absolute;
+    width: 700px;
+    height: 100px;
+    background-color: black;
+    opacity: 80%;
+    top: 220%;
+    left: 40%;
+}
+
+.mf{
+    position: absolute;
+    color: white;
+    top: 222%;
+    left: 45%;
+    text-align: center;
+    font-size: 45px;
+}
+
+.info3{
+    position: absolute;
+    color: white;
+    width: 900px;
+    height: 500px;
+    font-size: 20px;
+    top: 180%;
+    left: 7%;
+}
+
+
+
+
+
+
+
 
 
 

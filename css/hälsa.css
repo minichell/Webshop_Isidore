@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -226,8 +227,8 @@ ul{
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    top: 70px;
     width: 100%;
 }
 
@@ -252,8 +253,170 @@ ul{
 }
 
 
+.text2{
+    color: white;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    width: 800px;
+    left: 49%;
+    bottom: 20em;
+}
 
+.text3{
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    width: 800px;
+    right: 28%;
+    width: 400px;
+    height: 500px;
+    top: 530px;
+    text-decoration: white;
+}
+.cir1{
+position: relative;
+background-color: black;
+opacity: 50%;
+width: 600px;
+height: 600px;
+border-radius: 1000px;
+left: 20%;
+top: 15em;
+}
 
+.text1{
+    position: absolute;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    width: 500px;
+    height: 500px;
+    right: 53%;
+    top: 600px;
+}
+
+.cir2{
+position: relative;
+background-color: black;
+opacity: 50%;
+width: 600px;
+height: 600px;
+border-radius: 1000px;
+bottom: 28em;
+left: 47%;
+}
+
+@media(max-width: 574px){
+    .cir1 {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .cir2{
+        width: 50%;
+        margin-bottom: 30px;
+        bottom: 2em;
+    }
+   
+    .text1{
+        width: 45%;
+        margin-bottom: 30px;
+        font-size: 12px;
+        text-align: center;
+        left: 23%;
+        top: 20%;
+    }
+
+    .text2{
+        width: 50%;
+        margin-bottom: 30px;
+        font-size: 20px;
+        text-align: center;
+         bottom: 20%;
+    }
+
+    .text3{
+        width: 45%;
+        margin-bottom: 30px;
+        top: 100%;
+        left: 50%;
+        text-align: center;
+        font-size: 12px;
+    }
+
+}
+
+@media(max-width: 1650px){
+    .cir1{
+        width: 50%;
+        margin-bottom: 30px;
+       
+    }
+
+    .cir2{
+        width: 50%;
+        margin-bottom: 30px;
+        bottom: 70%;
+    }
+
+    .text1{
+        width: 45%;
+        margin-bottom: 30px;
+        left: 23%;
+        top: 60%;
+    }
+
+    .text2{
+        width: 50%;
+        margin-bottom: 30px;
+        text-align: center;
+         bottom: 6%;
+    }
+
+    .text3{
+        width: 45%;
+        margin-bottom: 30px;
+        top: 100%;
+        left: 50%;
+    }
+}
+
+@media(max-width: 1048px){
+    .cir1{
+        width: 50%;
+        margin-bottom: 30px;
+       
+    }
+
+    .cir2{
+        width: 50%;
+        margin-bottom: 30px;
+        bottom: 70%;
+    }
+
+    .text1{
+        width: 45%;
+        margin-bottom: 30px;
+        left: 23%;
+        top: 55%;
+        font-size: 12px ;
+    }
+
+    .text2{
+        width: 50%;
+        margin-bottom: 30px;
+        text-align: center;
+         bottom: 6%;
+    }
+
+    .text3{
+        width: 45%;
+        margin-bottom: 30px;
+        top: 100%;
+        left: 50%;
+        font-size: 12px ;
+    }
+}
 
 
 
